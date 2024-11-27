@@ -46,11 +46,7 @@ public class Controllers
 		model.addAttribute("productDto",productDto);
 		return "products/createProduct";
 	}
-	
-	
-	
-	
-	
+
 	@PostMapping("/create")
 	public String createProduct(@Valid @ModelAttribute ProductDto productDto, BindingResult result) {
 	  if(productDto.getImageFieldName().isEmpty()) {
@@ -95,7 +91,7 @@ public class Controllers
 		return "redirect:/products";
 	}
 	
-	
+	//dfghyjhfyh
 	
 	//update the product details
 	@GetMapping("/edit")
